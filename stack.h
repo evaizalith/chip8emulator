@@ -1,3 +1,6 @@
+#ifndef CHIP8_STACK
+#define CHIP8_STACK
+
 struct stack {
     int max_size;
     int top;
@@ -10,3 +13,5 @@ int isFull(struct stack *ptr);
 void push(struct stack *ptr, unsigned int element);
 unsigned int peek(struct stack *ptr);
 unsigned int pop(struct stack *ptr);
+
+#endif

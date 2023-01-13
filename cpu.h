@@ -1,9 +1,13 @@
 #include <stdbool.h>
+#include "stack.h"
 
-uint8_t memory[4048];
+#ifndef CHIP8_CPU
+#define CHIP_8CPU
+
+uint8_t memory[4096];
 bool display[64][32];
 unsigned int program_counter;
-unsigned int *stack; //Pointer to top of stack
+stack* call_stack; //Pointer to top of stack
 uint8_t delay_timer;
 uint8_t sound_timer;
 
@@ -23,3 +27,5 @@ uint8_t VC;
 uint8_t VD;
 uint8_t VE;
 uint8_t VF;
+
+#endif
