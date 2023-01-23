@@ -1,10 +1,11 @@
 #include <stdbool.h>
+#include <stdint.h>
 #include "stack.h"
 
 #ifndef CHIP8_CPU
 #define CHIP8_8CPU
 
-int power_on;
+int power_on : 1;
 uint8_t memory[4096];
 bool display[64][32];
 unsigned int program_counter;
