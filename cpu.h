@@ -5,7 +5,7 @@
 #ifndef CHIP8_CPU
 #define CHIP8_8CPU
 
-int power_on : 1;
+int power_on;
 uint8_t memory[4096];
 bool display[64][32];
 unsigned int program_counter;
