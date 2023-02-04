@@ -35,8 +35,8 @@ int main(int argc, char* argv[]) {
     glutInitWindowSize(64, 32);
     glViewport(0, 0, 640, 320);
     glutCreateWindow("CHIP-8 Emulator");
-
-    draw();
+ 
+    glutDisplayFunc(draw);
 
     glutMainLoop();
 
